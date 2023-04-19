@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { navlink } from './navlinks';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projet2';
+  navLinks: navlink[] = [
+    {
+      label: 'Home',
+      link: '#'
+    },
+    {
+      label: 'Collection',
+      link: '#'
+    },
+    {
+      label: 'About',
+      link: '#'
+    },
+    {
+      label: 'Contact',
+      link: '#'
+    },
+  ]
 }
